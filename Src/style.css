@@ -1,0 +1,176 @@
+:root{
+    --primary-color: #a306b6;
+    --secondary-color: #d9d9d9;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("//Public/Fonts/Montserrat-VariableFont_wght.ttf;")"
+}
+
+@font-face {
+    font-family: "Sourcesans3";
+    src: url("../Public/Fonts/SourceSans3-VariableFont_wght.ttf");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+h1,
+h2,
+h3{
+    font-family: "Montserrat"
+}
+
+p,
+a {font-family: "Sourcesans3";}
+
+a{
+    text-decoration: none;
+    color: white;
+
+}
+
+header{
+    background-color: var(--primary-color);
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+
+    @media screen and(min-width: 992px) {
+        flex-direction: row;
+        justify-content:space-between ;
+        padding: 0 1em;
+    }
+}
+
+
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 4em;
+
+    @media screen and(min-width: 992px){
+    padding: 0 2em 
+}
+}
+
+#logo{
+    width: 50px;
+}
+
+#avatar{
+    width: 150px;
+    border-radius: 50%;
+    border: 3px solid white;
+    background-color: white;
+    margin: 2em 0;
+
+    @media screen and(min-width: 992px){
+    width: 300px;    
+    }
+}
+
+Header section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2m 0;
+    
+    @media screen and(min-width: 992px){
+    flex-direction: row-reverse;
+    width: 80%;
+    justify-content: space-around;  
+    margin-left: auto;
+    margin-right: auto;
+    }
+}
+
+header section h1{
+    color: white;
+    width: 35%;
+    text-align: center;
+    font-size: 1.5em;
+    
+    @media screen and(min-width: 992px){
+    font-size: 2em;
+        width: 4em;
+}
+}
+
+main section h2{
+    color: var(--primary-color);
+    text-align: center;
+    margin: 2em 0;
+}
+
+#articles{
+    display: flex;
+    flex-direction: column;
+    margin: 0 1.2em;
+    gap: 2em;
+
+    @media screen and(min-width: 992px){
+    flex-direction: row;    
+    }
+}
+
+#articles article {
+    background-color: var(--secondary-color);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em 0;
+    gap: 1.2em;
+
+    @media screen and(min-width: 992px){
+    min-width: 22em;
+    justify-content: center;
+    }
+}
+
+article img {
+    max-height: 200px;
+}
+
+#articles article h3 {
+    font-size: 1.5em;
+    text-transform: capitalize;
+}
+
+#articles article button {
+    all: unset;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.6em 2em;
+    text-transform: uppercase;
+    border-radius: 25px;
+    font-family: "Sourcesans3";
+}
+
+section p {
+    margin: 0 0.7em;
+}
+
+footer {
+    background-color: var(--secondary-color);
+    display: flex;
+    flex-direction:column ;
+    padding: 1em 0;
+    align-items: center;
+    font-family: "Sourcesans3";
+    margin-top: 4em 0;
+}
+
+footer span a{
+    color: var(--primary-color);
+}
